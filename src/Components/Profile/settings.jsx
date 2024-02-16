@@ -7,7 +7,7 @@ import { useData } from "../../context/dataStore";
 export const Settings = () => {
 
     const  { authDispatch } = useAuth();
-    const  { navigate } = useNavigate();
+    const   navigate  = useNavigate();
     const  { toastProp } = useData();
 
     const logoutClickHandler = () => {
