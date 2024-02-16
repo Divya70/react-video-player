@@ -1,0 +1,190 @@
+
+.video-and-notes-container {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 1rem;
+    overflow: auto;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.video-player {
+    position: relative;
+    padding-top: 56.25%;
+    width: 43rem;
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.video-body {
+    color: var(--white-default);
+}
+
+.video-player-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.video-player-icons {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 1.3rem;
+}
+
+
+.vid-icon-watch-Later {
+    font-size: 1.5rem;
+}
+
+.vid-icon-save {
+    font-size: 1.5rem;
+}
+
+.vid-player-icon {
+    font-size: 1.4rem;
+}
+
+.is-active {
+    color: var(--active-color);
+}
+
+.vid-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.vid-option:hover {
+    color: var(--primary-color);
+}
+
+.option-name {
+    font-size: 1rem;
+}
+
+/* notes css */
+
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notes-btns {
+    display: flex;
+    gap: 7px;
+}
+
+.note-title {
+    color: var(--white-default);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.note-btn-outline {
+    border-radius: 2px;
+    font-weight: 700;
+    border-width: 1px;
+    background-color: var(--black-default);
+    color: var(--defualt-black);
+}
+
+.notes-btns .pading {
+    padding: .3rem .8rem;
+    text-transform: unset;
+    color: var(--white-color);
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.notes-btns .border {
+    border-width: 2px;
+}
+
+.note-btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white-default);
+}
+
+.notes-input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+.notes-input:focus{
+    outline: var(--primary-color);
+    outline-style:solid;
+    outline-width: 2px;
+}
+
+@media only screen and  (max-width : 830px) {
+
+    .video-and-notes-container {
+        padding-top: 0;
+        overflow: auto;
+    }
+
+    .video-container {
+        margin: 10px;
+    }
+
+    .video-player {
+        width: auto;
+    }
+
+    .video-player-title {
+        font-size: 1rem;
+    }
+
+    .option-name {
+        font-size: .9rem;
+    }
+
+    .vid-icon-watch-Later {
+        font-size: 1.2rem;
+    }
+    
+    .vid-icon-save {
+        font-size: 1.2rem;
+    }
+    
+    .vid-player-icon {
+        font-size: 1.3rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        display: none;
+    }
+
+    .notes-container {
+        margin-bottom: 2rem;
+    }
+
+    .pading {
+        padding: .4rem .8rem;
+        text-transform: unset;
+        color: var(--white-default);
+        font-size: .9rem;
+    }
+
+
+}

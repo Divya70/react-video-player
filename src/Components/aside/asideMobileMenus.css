@@ -1,0 +1,49 @@
+/* aside */
+
+.mr-top {
+    margin-top: 3px;
+}
+
+.vid-aside-container {
+    display: flex;
+    width: 6rem;
+    gap: 2rem;
+    padding-top: 1rem;
+    background-color: var(--nav-bg-color);
+    height: calc(100vh - 4rem);
+}
+
+.aside-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white-default);
+}
+
+.vid-aside-icon {
+    color: inherit;
+    font-size: 1.3rem;
+}
+
+.watch {
+    font-size: 1.6rem;
+}
+
+.vid-aside-title {
+    color: inherit;
+    font-size: .9rem;
+}
+
+.playlist-icon {
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .vid-aside-container {
+       display: none;
+    }
+    
+
+}

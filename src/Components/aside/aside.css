@@ -1,0 +1,80 @@
+/* aside */
+
+.mr-top {
+    margin-top: 3px;
+}
+
+.vid-aside-container {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    gap: 2rem;
+    padding-top: 1rem;
+    background-color: var(--nav-bg-color);
+    height: calc(100vh - 4rem);
+}
+
+.aside-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white-default);
+}
+
+.vid-aside-icon {
+    color: inherit;
+    font-size: 1.3rem;
+}
+
+.watch {
+    font-size: 1.6rem;
+}
+
+.vid-aside-title {
+    color: inherit;
+    font-size: .9rem;
+}
+
+.playlist-icon {
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .vid-aside-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+        position: fixed;
+        bottom: 0;
+        z-index: 50;
+        height: max-content;
+        justify-content: space-between;   
+        padding: 11px 10px;
+        backdrop-filter: blur(5px);
+        background-color: #2c2b2bc5;
+        border-radius: 20px;
+    }
+
+    .vid-aside-title {
+        display: none;
+    }
+
+    .vid-aside-icon {
+        font-size: 1.4rem;
+    }
+
+    .watch {
+        font-size: 1.7rem;
+    }
+
+    .playlist-icon {
+        font-size: 2.1rem;
+        padding-top: 5px;
+    }
+    
+
+}

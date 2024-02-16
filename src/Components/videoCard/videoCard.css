@@ -1,0 +1,131 @@
+/* Card css */
+
+.vid-main-container {
+    width: 100%;
+    max-width: 19rem;
+    margin-bottom: 2rem;
+}
+
+.vid-img-contaier {
+    width: 100%;
+    position: relative;
+}
+
+.vid-img {
+    width: 100%;
+    block-size: auto;
+    object-fit: cover;
+}
+
+.vid-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    color: var(--white-default);
+    background-color: var(--black-color);
+    font-size: .8rem;
+    padding: 2px 5px;
+    font-weight: 600;
+}
+
+.vid-body-continer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.avatar-small {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.vid-info-box {
+    display: flex;
+    flex-direction: column;
+    color: var(--white-default);
+    margin-left: .9rem;
+}
+
+.vid-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 100%;
+    max-width: 13.5rem;
+}
+
+.vid-channel {
+    font-size: 15px;
+    margin-top: 5px;
+    color: var(--grey-default);
+}
+
+.vid-views {
+    font-size: 15px;
+    margin-top: 3px;
+    color: var(--grey-default);
+}
+
+.menu-icon {
+    color: var(--white-default);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.menu-wrapper {
+    position: relative;
+    margin-left: auto;
+}
+
+.menu-options-wrapper {
+    position: absolute;
+    left: -11.1rem;
+    top: 1.1rem;
+    background-color: var(--menu-bg-color);
+    width: max-content;
+    padding: .6rem 0;
+    border-radius: 4.4px;
+}
+
+.option-box {
+    color: var(--white-default);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: .3rem 1rem;
+    transition: .4s ease-in-out;
+
+}
+
+.option-box:hover {
+    background-color: var(--hover-black);
+}
+
+.option-menu-title {
+    font-size: 1rem;
+}
+
+.option-menu-icon {
+    font-size: 1.3rem;
+}
+.option-menu-icon-WL {
+    font-size: 1.1rem;
+}
+
+.watched {
+    color: var(--active-color);
+}
+
+@media screen and (max-width : 700px) {
+    
+    .vid-main-container {
+        max-width: 25rem;
+    }
+
+    .vid-body-continer {
+        width: 100%;
+    }
+
+    
+}
