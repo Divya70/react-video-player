@@ -80,7 +80,7 @@ const Signup = () => {
             <div className="condition-box flex width-100 margin-bottom">
                 <div className="remember-me-box">
                     <input type="checkbox" name="remember me" id="remember-me" required />
-                    <label htmlFor="remember me">I accept all Tearms and Conditions</label>
+                    <label htmlFor="remember me">I accept all Terms and Conditions</label>
                 </div>
 
             </div>
